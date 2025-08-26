@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>リアルタイム残業代計算アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>リアルタイム残業代計算アプリ</h1>
+
+    <div class="container">
+        <div class="input-group">
+            <label for="hourlyRate">時給:</label>
+            <input type="number" id="hourlyRate" placeholder="時給を入力してください">
+        </div>
+
+        <button id="startButton">計算開始</button>
+        <button id="stopButton">停止</button>
+
+        <div class="result">
+            <h2>現在の残業代: <span id="overtimePay">0</span> 円</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
